@@ -41,4 +41,21 @@ public partial class MonkeysViewModel : BaseViewModel
         }
 
     }
+
+    [RelayCommand]
+    public async Task GoToDetails(Monkey monkey)
+    {
+        if (monkey is null)
+        {
+            return;
+        }
+        await Shell.Current.GoToAsync(
+            nameof(DetailsPage),
+            true,
+            new Dictionary<string, object>
+            {
+                {"Monkey", monkey }
+            }
+        );
+    }
 }
