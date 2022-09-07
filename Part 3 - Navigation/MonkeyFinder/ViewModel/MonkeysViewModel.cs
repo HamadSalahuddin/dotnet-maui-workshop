@@ -87,6 +87,7 @@ public partial class MonkeysViewModel : BaseViewModel
 
         try
         {
+            IsBusy = true;
             var location = await this.geolocation.GetLastKnownLocationAsync();
             if (location is null)
             {
@@ -117,6 +118,10 @@ public partial class MonkeysViewModel : BaseViewModel
         {
             Debug.WriteLine($"Unable to query location: {ex.Message}");
             await Shell.Current.DisplayAlert("Error!", ex.Message, "OK");
+        }
+        finally
+        {
+            IsBusy = false;
         }
     }
 }
