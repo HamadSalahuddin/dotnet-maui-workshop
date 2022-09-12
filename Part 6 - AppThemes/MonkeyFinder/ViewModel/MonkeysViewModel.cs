@@ -1,4 +1,5 @@
 ﻿using MonkeyFinder.Services;
+using MonkeyFinder.View;
 
 namespace MonkeyFinder.ViewModel;
 
@@ -67,6 +68,12 @@ public partial class MonkeysViewModel : BaseViewModel
         {
             {"Monkey", monkey }
         });
+    }
+
+    [RelayCommand]
+    public async Task GoToAbsoluteLayoutPage()
+    {
+        await Shell.Current.GoToAsync(nameof(AbsoluteLayoutPage));
     }
 
     [RelayCommand]
