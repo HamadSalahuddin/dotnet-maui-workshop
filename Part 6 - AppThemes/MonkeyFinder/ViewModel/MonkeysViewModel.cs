@@ -77,6 +77,12 @@ public partial class MonkeysViewModel : BaseViewModel
     }
 
     [RelayCommand]
+    public async Task GoToGridLayoutPage()
+    {
+        await Shell.Current.GoToAsync(nameof(GridLayoutPage));
+    }
+
+    [RelayCommand]
     async Task GetClosestMonkey()
     {
         if (IsBusy || Monkeys.Count == 0)

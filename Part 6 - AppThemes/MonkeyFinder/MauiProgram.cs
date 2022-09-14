@@ -26,6 +26,7 @@ public static class MauiProgram
 		builder.Services.AddTransient<MonkeyDetailsViewModel>();
 		builder.Services.AddTransient<DetailsPage>();
         builder.Services.AddTransient<AbsoluteLayoutPage>();
+        builder.Services.AddTransient<GridLayoutPage>();
 
         return builder.Build();
 	}
