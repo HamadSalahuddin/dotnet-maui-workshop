@@ -83,6 +83,12 @@ public partial class MonkeysViewModel : BaseViewModel
     }
 
     [RelayCommand]
+    public async Task GoToHorrizontalStackLayoutPage()
+    {
+        await Shell.Current.GoToAsync(nameof(HorrizonalStackLayoutPage));
+    }
+
+    [RelayCommand]
     async Task GetClosestMonkey()
     {
         if (IsBusy || Monkeys.Count == 0)

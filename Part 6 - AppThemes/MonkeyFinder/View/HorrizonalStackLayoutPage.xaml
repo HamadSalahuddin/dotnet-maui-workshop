@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MonkeyFinder.View.HorrizonalStackLayoutPage"
+             Title="HorrizonalStackLayoutPage">
+    <!--<HorizontalStackLayout 
+        Margin="20"
+        Spacing="10">
+        <Rectangle Fill="Red"
+                  HeightRequest="30"
+                  WidthRequest="30" />
+        <Label Text="Red"
+              FontSize="18" />
+    </HorizontalStackLayout>-->
+
+    <!--<HorizontalStackLayout Margin="20"
+                           HeightRequest="200">
+        <Label Text="Start"
+               BackgroundColor="Gray"
+               VerticalOptions="Start" />
+        <Label Text="Center"
+               BackgroundColor="Gray"
+               VerticalOptions="Center" />
+        <Label Text="End"
+               BackgroundColor="Gray"
+               VerticalOptions="End" />
+        <Label Text="Fill"
+               BackgroundColor="Gray"
+               VerticalOptions="Fill" />
+    </HorizontalStackLayout>-->
+
+    <!--<HorizontalStackLayout 
+        Margin="20"
+        Spacing="6">
+        
+        <Label Text="Primary colors:" />
+        <VerticalStackLayout Spacing="6">
+            <Rectangle Fill="Red"
+                       WidthRequest="30"
+                       HeightRequest="30" />
+            <Rectangle Fill="Yellow"
+                       WidthRequest="30"
+                       HeightRequest="30" />
+            <Rectangle Fill="Blue"
+                       WidthRequest="30"
+                       HeightRequest="30" />
+        </VerticalStackLayout>
+        <Label Text="Secondary colors:" />
+        <VerticalStackLayout Spacing="6">
+            <Rectangle Fill="Green"
+                       WidthRequest="30"
+                       HeightRequest="30" />
+            <Rectangle Fill="Orange"
+                       WidthRequest="30"
+                       HeightRequest="30" />
+            <Rectangle Fill="Purple"
+                       WidthRequest="30"
+                       HeightRequest="30" />
+        </VerticalStackLayout>
+    </HorizontalStackLayout>-->
+    <VerticalStackLayout Margin="20"
+                         Spacing="6">
+        <Label Text="Start"
+               BackgroundColor="Gray"
+               HorizontalOptions="Start" />
+        <Label Text="Center"
+               BackgroundColor="Gray"
+               HorizontalOptions="Center" />
+        <Label Text="End"
+               BackgroundColor="Gray"
+               HorizontalOptions="End" />
+        <Label Text="Fill"
+               BackgroundColor="Gray"
+               HorizontalOptions="Fill" />
+    </VerticalStackLayout>
+</ContentPage>

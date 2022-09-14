@@ -27,6 +27,7 @@ public static class MauiProgram
 		builder.Services.AddTransient<DetailsPage>();
         builder.Services.AddTransient<AbsoluteLayoutPage>();
         builder.Services.AddTransient<GridLayoutPage>();
+        builder.Services.AddTransient<HorrizonalStackLayoutPage>();
 
         return builder.Build();
 	}
