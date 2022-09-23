@@ -12,5 +12,7 @@ public partial class AppShell : Shell
 		Routing.RegisterRoute(nameof(AbsoluteLayoutPage), typeof(AbsoluteLayoutPage));
         Routing.RegisterRoute(nameof(GridLayoutPage), typeof(GridLayoutPage));
         Routing.RegisterRoute(nameof(HorrizonalStackLayoutPage), typeof(HorrizonalStackLayoutPage));
+        Routing.RegisterRoute(nameof(PresentData), typeof(PresentData));
+        Routing.RegisterRoute(nameof(Controls), typeof(Controls));
     }
 }

@@ -89,6 +89,18 @@ public partial class MonkeysViewModel : BaseViewModel
     }
 
     [RelayCommand]
+    public async Task GoToPresentDataPage()
+    {
+        await Shell.Current.GoToAsync(nameof(PresentData));
+    }
+    
+    [RelayCommand]
+    public async Task GoToControlsPage()
+    {
+        await Shell.Current.GoToAsync(nameof(Controls));
+    }
+
+    [RelayCommand]
     async Task GetClosestMonkey()
     {
         if (IsBusy || Monkeys.Count == 0)

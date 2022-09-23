@@ -58,7 +58,7 @@
                        HeightRequest="30" />
         </VerticalStackLayout>
     </HorizontalStackLayout>-->
-    <VerticalStackLayout Margin="20"
+    <!--<VerticalStackLayout Margin="20"
                          Spacing="6">
         <Label Text="Start"
                BackgroundColor="Gray"
@@ -72,5 +72,5 @@
         <Label Text="Fill"
                BackgroundColor="Gray"
                HorizontalOptions="Fill" />
-    </VerticalStackLayout>
+    </VerticalStackLayout>-->
 </ContentPage>
